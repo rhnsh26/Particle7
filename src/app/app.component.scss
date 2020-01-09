@@ -1,0 +1,32 @@
+.main-container{
+    background-image: url("../assets/P7-final_bg3.jpg");
+    height: 100vh;
+    
+    background-position: center center;
+    background-size: cover;
+    background-color: #000;
+    display: flex;
+    justify-content: space-evenly;
+    
+    transition: 1s all ease-in;
+}
+.filter{
+    filter: grayscale(100%);
+}
+.brand-logo{
+    width: 30%;
+    height: auto;
+    margin: auto 28%;
+}
+.icons{
+    position: absolute;
+    z-index: 3;
+    bottom: 90px;
+    right: 40px;
+}
+.insta_icon{
+    padding: 1rem;
+}
+.discord_icon{
+    padding: 1rem;
+}

@@ -1,4 +1,4 @@
-.main-container{
+.homepage{
     background-image: url("../assets/P7-final_bg3.jpg");
     height: 100vh;  
     background-position: center center;
@@ -7,6 +7,7 @@
     display: flex;
     justify-content: space-evenly;
     transition: 1s all ease-in;
+    flex-direction: column;
 }
 .filter{
     filter: grayscale(100%);
@@ -14,13 +15,15 @@
 .brand-logo{
     width: 30%;
     height: auto;
-    margin: auto 28%;
+    margin: auto;
+}
+.bottom-details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 .icons{
-    position: absolute;
-    z-index: 3;
-    bottom: 40px;
-    right: 40px;
+    padding:2rem;
 }
 .insta_icon{
     padding: 1rem;
@@ -28,11 +31,73 @@
 .discord_icon{
     padding: 1rem;
 }
+.scroll-down{
+    padding-left: 8rem;
+    align-self: center;
+}
+
+/////////////////////////////////// ABOUT SECTION  ////////
+
+.about{
+    text-align: center;
+    margin: 3rem 4rem;
+}
+.about-heading{
+    font-family:"Raleway", sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 130%;
+}
+.about-subheading{
+    font-family:"Raleway", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 160%;
+}
+.features-container{
+    padding: 2rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.feature-card{
+    text-align: start;    
+    margin: 3rem 0;
+    min-width: 280px;
+    max-width: 330px;
+    padding-top: 2rem 1rem;
+}
+.feature-heading{
+    font-family:"Montserrat", sans-serif;
+    font-size: 1.2rem;
+    padding: .5rem 0;
+    font-weight: 800;
+}
+.feature-content{
+    font-family: "Raleway",sans-serif;
+    font-size: 14px;
+    line-height: 160%;
+    font-weight: 300;
+}
+
+.footer{
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    padding: 3rem 2rem;
+}
+.footer_content{
+    font-weight: 400;
+}
+
+/////////////////////////////// MEDIA QUERIES ----------------------------->
+
 @media only screen and (max-width : 768px){
     .brand-logo{
         width: 55%;
         height: auto;
-        margin: auto 28%;
+        margin: auto;
     }
     .icons{
         position: absolute;
@@ -40,18 +105,38 @@
         bottom: 40px;
         right: 20px;
     }
+    .scroll-down{
+        display: none;
     }
+    .about{
+        text-align: center;
+        margin: 2rem 1rem;
+    }
+    .features-container{
+        padding: 2rem 4rem;
+    }
+    }
+
+/////////////////////////////// MEDIA QUERIES ----------------------------->
+
+
 @media only screen and (max-width : 420px){
     .brand-logo{
         width: 80%;
         height: auto;
-        margin: auto 28%;
+        margin: auto;
     }
     .icons{
         position: absolute;
         z-index: 3;
         bottom: 30px;
         right: 10px;
+    }
+    .scroll-down{
+        display: none;
+    }
+    .features-container{
+        padding: 2rem 2rem;
     }
     }
     

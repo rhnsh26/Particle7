@@ -9,6 +9,19 @@
     transition: 1s all ease-in;
     flex-direction: column;
 }
+.signUp_top_link{
+    align-self: flex-end;
+    color: #fff;
+    font-family:"Montserrat", sans-serif;
+    font-size: 1.2rem;
+    margin: 2rem 2rem 0 0;
+    font-weight: 800;
+    text-decoration: none;
+    &:hover{
+        text-decoration: underline;
+    }
+
+}
 .filter{
     filter: grayscale(100%);
 }
@@ -122,6 +135,10 @@
     outline: none;
         
 }
+.pubg_cod_img{
+    width: 100%;
+    height: auto;
+}
 
 
 ///////////
@@ -159,7 +176,13 @@
     .features-container{
         padding: 2rem 4rem;
     }
+    .signUp_R{
+        padding: 0 2rem;
     }
+    .pubg_cod_img{
+        display: none;
+    }
+}
 
 /////////////////////////////// MEDIA QUERIES ----------------------------->
 
@@ -181,6 +204,12 @@
     }
     .features-container{
         padding: 2rem 2rem;
+    }
+    .feature-card{
+        min-width: 180px;
+    }
+    .signUp_R{
+        padding: 0 1rem;
     }
     }
     

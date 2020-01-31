@@ -81,6 +81,50 @@
     font-weight: 300;
 }
 
+/////////////////////////////////// SIGNUP/////////
+.signUp{
+    min-height:70vh;
+    padding: 4rem 2rem;
+    display: flex;
+    background-color: #0b0b0b;
+    color: #fff;
+    align-items: center;
+
+}
+.signUp_R{
+    padding: 0 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.signUp_paragraph{
+    padding: 2rem 0;
+    font-size: 1rem;
+    font-family: "Raleway",sans-serif;
+    line-height: 160%;
+    font-weight: 300;
+}
+.signUp_button{
+    padding: 1rem 3rem;
+    background: #B00B0B;
+    &:hover{
+        background: rgb(224, 36, 36);;
+    }
+}
+.signUp_link{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    font-family:"Montserrat", sans-serif;
+    font-weight: 600;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+        
+}
+
+
+///////////
 .footer{
     text-align: center;
     background-color: #000;

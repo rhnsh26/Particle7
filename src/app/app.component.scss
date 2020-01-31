@@ -45,7 +45,7 @@
     padding: 1rem;
 }
 .scroll-down{
-    padding-left: 8rem;
+    padding-left: 12rem;
     align-self: center;
 }
 
@@ -105,6 +105,7 @@
 
 }
 .signUp_R{
+    flex: 1;
     padding: 0 4rem;
     display: flex;
     flex-direction: column;
@@ -138,6 +139,7 @@
 .pubg_cod_img{
     width: 100%;
     height: auto;
+    flex: 1;
 }
 
 

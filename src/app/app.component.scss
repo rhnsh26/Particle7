@@ -9,16 +9,45 @@
     transition: 1s all ease-in;
     flex-direction: column;
 }
+.header{
+    background: #0b0b0b;
+    height: 64px;
+    padding: 0 4rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.giveaway_text{
+    font-size: 1rem;
+    a{
+        color: #7289da;
+        text-decoration: none;
+        &:hover{
+            text-decoration: #7289da;
+        }
+    }
+}
+.discord_chat{
+    z-index:10;
+    position:fixed;
+    bottom:0px;
+    margin-bottom: -440px;
+    transition: all .2s ease-out;
+    &:hover{
+        margin-bottom: 0px;
+    }
+}
 .signUp_top_link{
-    align-self: flex-end;
+    // align-self: flex-end;
     color: #fff;
     font-family:"Montserrat", sans-serif;
     font-size: 1.2rem;
-    margin: 2rem 2rem 0 0;
+    // margin: 2rem 2rem 0 0;
     font-weight: 800;
-    text-decoration: none;
+    // text-decoration: none;
     &:hover{
-        text-decoration: underline;
+        color: #b00b0b;
     }
 
 }
@@ -36,16 +65,21 @@
     justify-content: space-between;
 }
 .icons{
-    padding:2rem;
+    padding:1rem;
 }
 .insta_icon{
     padding: 1rem;
+    filter: grayscale(100%);
+    &:hover{
+        filter: grayscale(0%);
+    }
+    transition: all .1s ease-out;
 }
-.discord_icon{
-    padding: 1rem;
-}
+// .discord_icon{
+//     padding: 1rem;
+// }
 .scroll-down{
-    padding-left: 12rem;
+    padding-left: 5rem;
     align-self: center;
 }
 
@@ -171,6 +205,9 @@
     .scroll-down{
         display: none;
     }
+    .discord_chat{
+       display: none;
+    }
     .about{
         text-align: center;
         margin: 2rem 1rem;
@@ -194,6 +231,22 @@
         width: 80%;
         height: auto;
         margin: auto;
+    }
+    .header{
+        padding: 0 1rem;
+    }
+    .signUp_top_link{
+        font-size: 1rem;
+        padding-left: 2rem;
+    }
+    .giveaway_text{
+        font-size: 14px;
+    }
+    .footer{
+        text-align: left;
+        background-color: #000;
+        color: #fff;
+        padding: 5rem 3rem;
     }
     .icons{
         position: absolute;

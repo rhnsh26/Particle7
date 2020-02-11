@@ -18,16 +18,16 @@
     align-items: center;
     justify-content: space-between;
 }
-.giveaway_text{
-    font-size: 1rem;
-    a{
-        color: #7289da;
-        text-decoration: none;
-        &:hover{
-            text-decoration: #7289da;
-        }
-    }
-}
+// .giveaway_text{
+//     font-size: 1rem;
+//     a{
+//         color: #7289da;
+//         text-decoration: none;
+//         &:hover{
+//             text-decoration: #7289da;
+//         }
+//     }
+// }
 .discord_chat{
     z-index:10;
     position:fixed;
@@ -38,19 +38,19 @@
         margin-bottom: 0px;
     }
 }
-.signUp_top_link{
-    // align-self: flex-end;
-    color: #fff;
-    font-family:"Montserrat", sans-serif;
-    font-size: 1.2rem;
-    // margin: 2rem 2rem 0 0;
-    font-weight: 800;
-    // text-decoration: none;
-    &:hover{
-        color: #b00b0b;
-    }
+// .signUp_top_link{
+//     // align-self: flex-end;
+//     color: #fff;
+//     font-family:"Montserrat", sans-serif;
+//     font-size: 1.2rem;
+//     // margin: 2rem 2rem 0 0;
+//     font-weight: 800;
+//     // text-decoration: none;
+//     &:hover{
+//         color: #b00b0b;
+//     }
 
-}
+// }
 .filter{
     filter: grayscale(100%);
 }
@@ -65,7 +65,7 @@
     justify-content: space-between;
 }
 .icons{
-    padding:1rem;
+    padding:.5rem;
 }
 .insta_icon{
     padding: 1rem;
@@ -75,9 +75,15 @@
     }
     transition: all .1s ease-out;
 }
-// .discord_icon{
-//     padding: 1rem;
-// }
+.discord_icon{
+    display: none;
+    padding: 1rem;
+    filter: grayscale(100%);
+    &:hover{
+        filter: grayscale(0%);
+    }
+    transition: all .1s ease-out;
+}
 .scroll-down{
     padding-left: 5rem;
     align-self: center;
@@ -199,7 +205,7 @@
     .icons{
         position: absolute;
         z-index: 3;
-        bottom: 40px;
+        bottom: 10px;
         right: 20px;
     }
     .scroll-down{
@@ -207,6 +213,9 @@
     }
     .discord_chat{
        display: none;
+    }
+    .discord_icon{
+        display: inline;
     }
     .about{
         text-align: center;
@@ -251,7 +260,7 @@
     .icons{
         position: absolute;
         z-index: 3;
-        bottom: 30px;
+        bottom: 10px;
         right: 10px;
     }
     .scroll-down{
